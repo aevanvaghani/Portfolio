@@ -7,6 +7,12 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -14,6 +20,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
         
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -26,9 +34,12 @@ jobs:
         
       - name: Build
         run: npm run build
+        env:
+          CI: false
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out # The folder the action should deploy
-          branch: gh-pages # The branch the action should deploy to 
+          branch: gh-pages # The branch the action should deploy to
+          token: ${{ secrets.GITHUB_TOKEN }} # The GitHub token with write permissions 
