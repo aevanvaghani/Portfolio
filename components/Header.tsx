@@ -24,7 +24,7 @@ export default function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
-            Vaghani Aevan | QA Automation Engineer
+            Aevan Vaghani | QA Automation Engineer
           </Link>
           
           <div className="hidden md:block">
