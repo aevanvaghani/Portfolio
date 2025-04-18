@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
+import { FaGithub } from 'react-icons/fa6';
 
 const projects = [
   {
@@ -102,7 +103,7 @@ export default function Projects() {
                         className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
                       >
                         <span>Live Demo</span>
-                        <FaExternalLinkAlt />
+                        <FaArrowUpRightFromSquare />
                       </a>
                     )}
                     {project.github !== '#' && (
@@ -179,7 +180,7 @@ export default function Projects() {
                       className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
                     >
                       <span>View Demo</span>
-                      <FaExternalLinkAlt size={14} />
+                      <FaArrowUpRightFromSquare size={14} />
                     </a>
                   )}
                   {project.github !== '#' && (
