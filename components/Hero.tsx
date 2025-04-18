@@ -12,7 +12,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Hi, I'm <span className="text-blue-600 dark:text-blue-400">Vaghani Aevan</span>
+            Hi, I'm <span className="text-blue-600 dark:text-blue-400">Aevan Vaghani</span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-600 dark:text-dark-text mb-8">
             QA Automation Engineer passionate about building robust, scalable test frameworks and ensuring flawless user experiences.
