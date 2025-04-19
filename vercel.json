@@ -1,7 +1,9 @@
 {
+  "version": 2,
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
   "framework": "nextjs",
-  "buildCommand": "next build",
-  "cleanUrls": true,
+  "outputDirectory": ".next",
   "headers": [
     {
       "source": "/(.*)",

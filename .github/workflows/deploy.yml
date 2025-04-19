@@ -51,7 +51,7 @@ jobs:
           
       # Copy CNAME file to 'out' directory
       - name: Copy CNAME
-        run: mkdir -p out && cp public/CNAME out/
+        run: cp public/CNAME out/
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
