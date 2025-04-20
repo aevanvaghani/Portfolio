@@ -187,6 +187,11 @@ class GridLine {
     this.opacity = Math.random() * 0.15 + 0.05;
     this.pulse = 0;
     this.pulseSpeed = Math.random() * 0.02 + 0.01;
+    this.x1 = 0;
+    this.y1 = 0;
+    this.x2 = 0;
+    this.y2 = 0;
+    this.color = '';
     
     // Initial position
     this.resetPosition();

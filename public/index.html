@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script>
+    // This script checks to see if a redirect is present in the query string.
+    // If it is, then it will redirect the page to this path.
+    (function() {
+      // Parse the query string
+      var redirect = location.search.substr(1).split('&').filter(function(item) {
+        return item.split('=')[0] === '/'
+      });
+      
+      // If a redirect is present, convert it to a proper path and redirect
+      if (redirect.length) {
+        window.history.replaceState(null, null, redirect.join('').split('=')[1].split('~and~').join('&'));
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- This file is used for GitHub Pages redirects and will be replaced by Next.js generated index.html -->
+</body>
+</html> 
