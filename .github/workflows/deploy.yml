@@ -2,7 +2,7 @@ name: Build and Deploy Next.js Portfolio
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   # Allows manual triggering of the workflow
   workflow_dispatch:
 
